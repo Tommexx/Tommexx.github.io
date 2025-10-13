@@ -1,0 +1,222 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #222;
+  background: #f9f9f9;
+  text-align: center;
+}
+
+a {
+  color: #0077cc;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #333;
+  padding: 20px;
+  z-index: 1000;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+header nav a {
+  color: white;
+  font-weight: bold;
+  padding: 5px 10px;
+}
+header nav a:hover {
+  background: #555;
+  border-radius: 50px;
+}
+
+main {
+  padding-top: 40px;
+}
+
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+  background: rgb(100,100,100);
+  color: white;
+}
+.hero h1 {
+  font-size: 5rem;
+  margin-bottom: 15px;
+  margin: 0;
+}
+.hero p {
+  max-width: 1000px;
+  margin: 0 auto;
+  font-size: 2rem;
+}
+
+section {
+  scroll-margin-top: 60px;
+}
+
+.box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+}
+.square {
+  flex: 1 1 200px;
+  min-width: 150px;
+  height: 150px;
+  background: #0077cc;
+  border-radius: 10px;
+}
+
+#program table {
+  margin: 40px auto;
+  background: #fff;
+  font-size: 22px;
+}
+#program th, #program td {
+  border: 2px solid #333;
+  padding: 15px 20px;
+  text-align: center;
+}
+caption {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+.obrazky {
+  display: grid;
+  gap: 20px;
+  padding: 20px;
+}
+.obrazky article {
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,1);
+}
+.obrazky img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+.obrazky figcaption {
+  margin-top: 20px;
+  font-style: italic;
+  font-size: 0.9rem;
+}
+
+#venue-tickets {
+  padding: 20px;                    
+  background: #eef6fb;
+}
+#venue-tickets iframe {
+  width: 100%;
+  height: 400px;
+  margin-top: 15px;
+}
+
+form {
+  margin-top: 20px;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+input, select, button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+button {
+  background: #aaaaaa;
+  color: white;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+button:hover {
+  background: #777777;
+}
+
+footer {
+  text-align: center;
+  background: #333;
+  color: white;
+  padding: 25px;
+  margin-top: 40px;
+  width: 100%;
+  font-size: 18px;
+}
+
+#toTopBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #0077cc;
+  border-radius: 50%;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#toTopBtn:hover {
+  background: #005fa3;
+}
+#toTopBtn svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (max-width: 600px) {
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+  .hero p {
+    font-size: 1rem;
+  }
+  header nav ul {
+    align-items: center;
+    gap: 10px;
+  }
+  .box {
+    flex-direction: column;
+  }
+  #program table, #program th, #program td {
+    font-size: 0.85rem;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+  .obrazky {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 901px) {
+  .obrazky {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
