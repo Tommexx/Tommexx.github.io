@@ -191,7 +191,7 @@ html {
 }
 
 element {
-  cursor: url('cursor.png'), auto;
+  cursor: url('TomasNovak.jpg'), auto;
 }
 
 @media (max-width: 600px) {
@@ -224,4 +224,5 @@ element {
     grid-template-columns: repeat(3, 1fr);
   }
 }
+
 
