@@ -190,6 +190,10 @@ html {
   scroll-behavior: smooth;
 }
 
+element {
+  cursor: url('cursor.png'), auto;
+}
+
 @media (max-width: 600px) {
   .hero h1 {
     font-size: 2.5rem;
@@ -220,3 +224,4 @@ html {
     grid-template-columns: repeat(3, 1fr);
   }
 }
+
