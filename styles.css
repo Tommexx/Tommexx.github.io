@@ -190,8 +190,8 @@ html {
   scroll-behavior: smooth;
 }
 
-element {
-  cursor: url('TomasNovak.jpg'), auto;
+body {
+  cursor: url('cursor.cur'), auto;
 }
 
 @media (max-width: 600px) {
@@ -224,5 +224,6 @@ element {
     grid-template-columns: repeat(3, 1fr);
   }
 }
+
 
 
